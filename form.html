@@ -1,58 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pendaftaran</title>
-    <link rel="stylesheet" href="form.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
-<body>
-    <h1>Formulir Pendaftaran</h1>
-    <form action="">
-        <label for="nama">Nama Lengkap</label><br>
-        <input type="text" placeholder="Yanto"><br>
-        <label for="nick">Nama Panggilan</label><br>
-        <input type="text" placeholder="Yanto"><br>
-        <label>Jenis Kelamin</label><br>
-        <td class="jk">
-        <select>
-            <option value="">Laki-laki</option>
-            <option value="">Perempuan</option>
-            
-        </select><br>
-       
-        <label for="ttl">Tempat Tanggal Lahir</label><br>
-        <input type="text" placeholder=""><br>
-        <label for="mail">Email</label><br>
-        <input type="email" placeholder="example@mail.id"><br>
-        <label for="no">No. Telepon</label><br>
-        <input type="text" placeholder="087xxxxxx"><br>
-        <label>Agama</label><br>
-        <td class="Agama">
-        <select>
-            <option value="">Islam</option>
-            <option value="">Katholik</option>
-            <option value="">Kristen</option>
-            <option value="">Buddha</option>
-            <option value="">Hindu</option>
-            <option value="">KongHucu</option>
-        </select><br>
-        <label for="warga">Kewarganegaraan</label><br>
-        <input type="warga"><br>
-        <label for="Status">Status</label><br>
-        <label for="Kawin">Kawin</label>
-        <input type="radio" name="Status" id="kawin">
-        <label for="Belum Kawin">Belum Kawin</label>
-        <input type="radio" name="Status" id="Belum"><br>
-        <label for="pengalaman">Pengalaman Bekerja</label><br>
-        <textarea name="pengalaman" id="" cols="30" rows="10"></textarea>
 
-        <div>
-            <button class="register" href="tampil.html">Register now!</button>
-        </div>
-    </form>
-    
-   </div>
+<body>
+    <div id="app">
+        <section class="section">
+            <div class="container mt-5  mb-5">
+                <div class="row">
+                    <div
+                        class="col-12 col-sm-8 offset-sm-1 col-md-6 offset-md-2 col-lg-6 offset-lg-2 col-xl-6 offset-xl-3">
+                        <div class="card card-primary mt-5">
+                            <div class="card-header">
+                                <h4>Form Pendaftaran</h4>
+                            </div>
+
+                            <div class="card-body">
+                                <form action="tampil.php" method="post">
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Nama Lengkap</label>
+                                        <input type="text" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" name="namaLengkap">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Nama Panggilan</label>
+                                        <input type="text" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" name="namaPanggilan">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Jenis Kelamin</label>
+                                        <select class="form-select" aria-label="Default select example" name="gender">
+                                            <option value="Laki-laki">Laki-laki</option>
+                                            <option value="Perempuan">Perempuan</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Tempat Lahir</label>
+                                        <input type="text" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" name="tempatLahir">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Tanggal Lahir</label>
+                                        <input type="date" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" name="tglLahir">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" name="email">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">No. HP</label>
+                                        <input type="number" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" name="noHp">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Agama</label>
+                                        <select class="form-select" aria-label="Default select example" name="agama">
+                                            <option value="Islam">Islam</option>
+                                            <option value="Kristen">Kristen</option>
+                                            <option value="Katholik">Katholik</option>
+                                            <option value="Hindu">Hindu</option>
+                                            <option value="Buddha">Buddha</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Kewarganegaraan</label>
+                                        <input type="text" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" name="kewarganegaraan">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Status</label>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" value="Kawin" id="flexCheckDefault"
+                                                name="status">
+                                            <label class="form-check-label" for="flexCheckDefault">Kawin</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" value="Belum Kawin" id="flexCheckChecked"
+                                                name="status">
+                                            <label class="form-check-label" for="flexCheckChecked">Belum Kawin</label>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlTextarea1" class="form-label">Pengalaman
+                                            Bekerja</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1"
+                                            rows="3" name="pengalaman"></textarea>
+                                    </div>
+                                    <div class="mb-3">
+                                        <button class="btn btn-primary" type="submit">Submit form</button>
+                                    </div>
+                                </form>
+                                <!-- akhir dari input data  -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
 </body>
+
 </html>
